@@ -1,0 +1,160 @@
+
+/* ====================================================== 
+   Tabs                                
+/* ====================================================== */
+
+@media all and (max-width: 768px) {
+	.js-tabs {
+		position: relative;
+		z-index: 1;
+
+		
+		.js-tabs_control {
+			list-style: none;
+			padding: 0;
+
+			li {
+				float: left;
+				margin-bottom: 5px;
+				margin-right: 5px;
+			}
+			&:after {
+				content: '';
+				display: table;
+				width: 100%;
+				clear: both;
+			}
+		}	
+		
+
+		&.inactivated {
+			z-index: -1;
+			
+		}	
+		
+		
+	}
+	
+}
+
+@media only screen and (min-width: 768px) {
+
+
+	/* Tabs control */
+	.js-tabs {
+		margin: 1em 0;
+		position: relative;
+		z-index: 1;
+		
+		
+		.js-tabs_control-text {
+			direction: ltr;
+			left: -999em;
+			position: absolute;
+		}
+		
+		.js-tabs_control {
+			float: left;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			position: relative;
+			z-index: 1000;
+
+			
+			&.inactivated {
+				z-index: 1;
+			}
+
+			li {
+				background: #FFFCE4;
+				border-width: 1px 1px 0;
+				float: left;
+				margin: 0 10px 0 0;
+				padding: 0;
+				position: relative;
+			}
+			button {
+				background: transparent;
+				cursor: pointer;
+				padding: 8px 1em 10px;
+				position: relative;
+				outline: 0;
+				font-size: 14px;
+				font-weight: normal;
+				color: #E3B886;
+				border: none;
+				border-left: 1px solid #E8C5A7;
+				border-right: 1px solid #E8C5A7;
+				border-top: 1px solid #E8C5A7;
+
+				&:hover, 
+				&:focus, 
+				&:active {
+					color: #CD7527;
+				}
+			}
+			.js-tabs_control-item--active {
+				background: #FFFCE4;
+				border: 1px solid #DD983C;
+				border-bottom: none;
+				color: #CD7527;
+				top: 1px;
+				z-index: 1000;
+
+				&:focus, 
+				&:active {
+					background: #FFFCE4;
+					border: 1px solid #DD983C;
+					border-bottom: none;
+					color: #CD7527;
+					top: 1px;
+					z-index: 1000;
+				}
+				button {
+					color: #CD7527;
+					font-weight: bold;
+					border: none;
+				}
+			}
+		}
+		.js-tabs_panel {
+			background-color: #FFFCE4;
+			border: 1px solid #DD983C;
+			color: #333;
+			clear: left;
+			display: block;
+			position: relative;
+			padding: 0 1em 0;
+			visibility: visible;
+			z-index: 5;
+			
+			p {
+				display: block;
+				margin: 1em 0;
+			}
+			&:focus {
+				outline: 1px dotted #DD983C;
+			}
+			
+		}
+		
+		&.inactivated {
+			z-index: -1;
+
+		}	
+		
+		
+		
+	}
+	/* Selected tabs control */
+	/* Tabs panel */
+	.js-tabs_panel p {
+		color: #a67b54;
+		
+		strong {
+			color: #834a1c;
+			background: #f8f4d0;
+		}
+	}
+}

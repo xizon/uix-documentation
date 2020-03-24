@@ -1,0 +1,59 @@
+
+/* ====================================================== 
+   Brand                                
+/* ====================================================== */
+
+.brand {
+	position: fixed;
+	left: 20px;
+	top: 0;
+	z-index: 90003;
+	text-align: left;
+	width: 250px;
+	
+	&.inactivated {
+		z-index: 1;
+	}	
+	
+	h1 {
+		font-family: 'Lato',sans-serif;
+		font-size: 22px;
+		height: 50px;
+		line-height: 1;
+		overflow: hidden;
+		font-weight: 100;
+		font-style: normal;
+		color: #fff;
+		font-weight: 100;
+		display: block;
+		text-shadow: 1px 0 0 #{$sidebar-color1};
+		text-overflow: ellipsis;	
+		width: 100%;
+		white-space: nowrap;
+		max-width: 220px;
+	}
+	
+	sup {
+		display: inline-block;
+		margin-left: 2px;
+		text-shadow: none;
+		z-index: 1;
+		font-size: 10px;
+		color: #fff;
+		background: #f60;
+		padding: 7px 5px;
+		border-radius: 15px;
+		font-family: sans-serif;
+	}
+
+}
+
+@media all and (max-width: 768px) {
+	.brand {
+		transform: translateX(-300px);
+	}
+	.js-menu-opened .brand {
+		transform: translateX(0);
+	}
+}
+

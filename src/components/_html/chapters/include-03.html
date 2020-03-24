@@ -1,0 +1,198 @@
+
+<!-- Installation & Upgrade
+================================================== -->
+<section>
+  <h1>3. Installation & Upgrade</h1>
+  <ul> 
+		<li>
+			  <h2 class="hot">3.1. Using WordPress Admin</h2>
+			  <article>
+					<div class="row">	  
+						  <div class="col-md-3"><p>
+							  <h5>Step 1.</h5> Log in to the WordPress Administration Panels.
+						  </p></div>
+						  <div class="col-md-9"><img src="assets/images/theme/theme-install-1.jpg" alt="" /></div>
+					</div>
+			  </article>
+
+			  <article>
+					<div class="row">	  
+						  <div class="col-md-3"><p>
+								<h5>Step 2.</h5> Click on <code>Dashboard » Appearance » Themes » Add New</code>
+						  </p></div>
+						  <div class="col-md-9"><img src="assets/images/theme/theme-install-2.jpg" alt="" /><img src="assets/images/theme/theme-install-3.jpg" alt="" /></div>
+					</div>
+			  </article>
+
+			  <article>
+					<div class="row">	  
+						  <div class="col-md-3"><p>
+							  <h5>Step 3.</h5> Use the Upload Theme button to upload a zipped of Theme <code>shadower-pro.zip</code>.
+						  </p></div>
+						  <div class="col-md-9"><img src="assets/images/theme/theme-install-4.jpg" alt="" /></div>
+					</div>
+			  </article>	  
+
+			  <article>
+					<div class="row">	  
+						  <div class="col-md-3"><p>
+								<h5>Step 4.</h5> Once your theme is installed, you will see a success message along with the link to <strong>"Activate"</strong> and preview the theme.
+						  </p></div>
+						  <div class="col-md-9"><img src="assets/images/theme/theme-install-5.jpg" alt="" /></div>
+					</div>
+			  </article>	 
+
+
+			  <article>
+					<div class="row">	  
+						  <div class="col-md-3"><p>
+								<h5>Step 5.</h5> Once you activate the premium theme you will see a notice on the top of your wordpress admin screen asking you to install the some recomended plugins. If you don’t want to use these plugins just click dismiss this notice. Otherwise click the begin installing plugins link. 
+						  </p></div>
+						  <div class="col-md-9"><img src="assets/images/theme/theme-install-6.jpg" alt="" /><img src="assets/images/theme/theme-install-7.jpg" alt="" /></div>
+					</div>
+			  </article>	
+
+			  <article>
+					<div class="row">	  
+						  <div class="col-md-3"><p>
+								<h5>Step 6.</h5> After activating it, please note there is an important first step after installing the Backstage theme. You need to navigate to <code>Dashboard » Settings » Permalinks</code> and click on the <strong>"Save Changes"</strong> button.
+								<div class="bs-callout bs-callout-warning">
+									Setting your WordPress Permalinks and click on the save button, even if you haven’t made any changes.
+
+								</div>
+
+						  </p></div>
+						  <div class="col-md-9"><img src="assets/images/theme/theme-install-9.jpg" alt="" /><img src="assets/images/theme/theme-install-10.jpg" alt="" /></div>
+					</div>
+			  </article>
+
+		</li>
+		<li>
+			  <h2>3.2. Using FTP</h2>
+			  <article>
+					<div class="row">	  
+						  <div class="col-md-12">
+							  <h5>Step 1.</h5> Log into your hosting via an FTP software.
+						  </div>
+					</div>
+					
+			  </article>
+
+			  <article>
+					<div class="row">	  
+						  <div class="col-md-12">
+							  <h5>Step 2.</h5> Unzip the installable file and upload into <code class="language-javascript">wp-content/themes</code> folder.
+						  </div>
+					</div>
+					
+			  </article>
+
+			  <article>
+					<div class="row">	  
+						  <div class="col-md-12">
+							  
+							  <h5>Step 3.</h5> Once your theme is installed, you will see a success message along with the link to <strong>"Activate"</strong> and preview the theme. Go to <code>Dashboard » Appearance » Themes</code> and activate the theme.
+						  </div>
+					</div>
+					
+			  </article>  
+
+			  <article>
+					<div class="row">	  
+						  <div class="col-md-12">
+							  
+							  <h5>Step 4.</h5> After activating it, please refer to the steps 4-6 of <strong>"3.1. Using WordPress Admin"</strong>. 
+						  </div>
+					</div>  
+					
+			  </article>   
+
+		</li>
+		<li>
+			  <h2>3.3. Troubleshooting</h2>
+				<ul> 
+					<li>
+						<h4>3.3.1. Zip file upload size is limited</h4>
+						<p>
+							If you can see an error message saying: <strong>"The uploaded file exceeds the upload_max_filesize directive in php.ini"</strong> or <strong>"Are you sure you want to do this? Please try again."</strong> The solution is as follows：
+							<ul>
+								<li>
+									<h5>In this case, you can simply unzip the installable theme file and install Theme via FTP:</h5>
+									Download the theme archive/files on your local computer and upload the files in the theme folder <code class="language-javascript">/wp-content/themes/</code>. Then you will have the theme in your Dashboard and you can activate it from there.
+								</li>
+								<li>
+									<h5>If you are using wamp for your localhost then click on the wamp green icon that is running and press on PHP directory, then you will see <strong>"php.ini"</strong> file.</h5>
+									If you dont use wamp software, then just find the <strong>"php.ini"</strong> file and open it. and search for <strong>"upload_max_filesize"</strong>. you should find rows like the bellow one:<br>
+									<strong>upload_max_filesize = 2M</strong><br>
+									By default the upload_max_filesize is 2 megabyte. Just simply change it to<br>
+									<strong>upload_max_filesize = 20M</strong> (20 megabyte), then save your php.ini file and restart your services and it will work.
+								</li>
+							</ul>
+
+						</p>
+						<br>
+
+					</li>
+
+
+					<li>
+						<h4>3.3.2. Theme is missing the style.css stylesheet error</h4>
+						<p>This is a common issue that can occur when installing a WordPress themes. For the details of solution, please have a look at <a href="https://help.market.envato.com/hc/en-us/articles/202821510-Theme-is-missing-the-style-css-stylesheet-error" target="_blank" rel="nofollow">this article</a>.</p>	
+
+					</li>
+				</ul>
+
+
+
+		</li>
+		<li>
+			  <h2 class="hot">3.4. Update Theme Manually</h2>
+			  <article>
+					<div class="row">	  
+						  <div class="col-md-3"><p>
+							  <h5>Step 1.</h5> Navigate to <code>Dashboard » Appearance » Themes</code>
+						  </p></div>
+						  <div class="col-md-9"><img src="assets/images/theme/update-1.jpg" alt="" /></div>
+					</div>
+			  </article>
+
+			  <article>
+					<div class="row">	  
+						  <div class="col-md-3"><p>
+								<h5>Step 2.</h5> You should see the theme that you uploaded listed there. Bring your mouse on bottom of that other theme and click on the <strong>"Activate"</strong> button. 
+								<div class="bs-callout bs-callout-warning">
+									Any theme can be, update current theme will only spend you 1 to 3 minutes.
+								</div>
+
+						  </p></div>
+						  <div class="col-md-9"><img src="assets/images/theme/update-2.jpg" alt="" /><img src="assets/images/theme/update-3.jpg" alt="" /></div>
+					</div>
+			  </article>
+
+			  <article>
+					<div class="row">	  
+						  <div class="col-md-3"><p>
+								<h5>Step 3.</h5> Click the deactivated theme to see <strong>"Theme Details"</strong> and click <strong>"Delete"</strong> button in the right bottom corner of it.
+						  </p></div>
+						  <div class="col-md-9"><img src="assets/images/theme/update-4.jpg" alt="" /><img src="assets/images/theme/update-5.jpg" alt="" /></div>
+					</div>
+			  </article>	  
+
+			  <article>
+					<div class="row">	  
+						  <div class="col-md-12">
+
+							   <h5>Step 4.</h5> Upload your latest zipped of Theme <code>shadower-pro.zip</code> again.
+						  </div>
+
+					</div>	  
+					
+			  </article>  
+
+
+		</li>
+
+  </ul>  
+
+</section>  
+<!-- /section -->
